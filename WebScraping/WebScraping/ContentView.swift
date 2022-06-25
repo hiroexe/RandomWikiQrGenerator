@@ -37,7 +37,7 @@ struct ContentView: View {
             }.frame(maxHeight: 200, alignment: .top)
                 
             if title != "" {
-                Image(uiImage: generateQRCode(from: "https://it.wikipedia.org/wiki/" + title)
+                Image(uiImage: generateQRCode(from: "https://it.wikipedia.org/wiki/" + titleForQR)
             ).interpolation(.none)
              .resizable()
              .scaledToFit()
